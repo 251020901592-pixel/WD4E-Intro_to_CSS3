@@ -2,3 +2,47 @@ body{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 150%;
 }
+/* 1. Nội dung */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* 2. Tiêu đề */
+header {
+  background-color: #e0e7ff;
+}
+
+/* 3. Thanh điều hướng */
+nav {
+  background-color: #dbeafe;
+}
+
+/* 4. Nội dung chính */
+main {
+  background-color: #f8fafc;
+  font-size: 18px;
+}
+
+/* 5. Chân trang */
+footer {
+  background-color: #e5e7eb;
+}
+
+/* 6. Danh sách */
+li {
+  display: inline-block;
+  width: 150px;
+}
+
+/* 7. Tiêu đề h1 */
+h1 {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: #1d4ed8;
+}
+
+/* 8. Đoạn văn */
+p {
+  line-height: 1.8;
+}
