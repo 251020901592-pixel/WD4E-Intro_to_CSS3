@@ -1,0 +1,79 @@
+/* --- PHẦN CSS CƠ BẢN CỦA BẠN --- */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Tiêu đề */
+header {
+  background-color: #e0e7ff;
+}
+
+/* Thanh điều hướng cơ bản */
+nav {
+  background-color: #dbeafe;
+}
+
+/* Nội dung chính */
+main {
+  background-color: #f8fafc;
+  font-size: 18px;
+}
+
+/* Chân trang */
+footer {
+  background-color: #e5e7eb;
+}
+
+/* Danh sách */
+li {
+  display: inline-block;
+  width: 150px;
+}
+
+/* Tiêu đề h1 */
+h1 {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: #1d4ed8;
+}
+
+/* Đoạn văn */
+p {
+  line-height: 1.8;
+}
+
+
+/* --- PHẦN BỔ SUNG CHO BÀI TẬP TUẦN 2 (HW2) --- */
+
+/* 1. Thay đổi phần tử nav: khối nội tuyến và chiều rộng khoảng 80% */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+/* 2. Sử dụng bộ chọn hậu duệ để tạo kiểu cho hình ảnh trong nav có chiều rộng khoảng 10% */
+nav img {
+    width: 10%;
+}
+
+/* 3. Tạo kiểu cho lớp lưới (Grid): lưới 2 cột, mỗi cột xấp xỉ 40% kèm căn chỉnh */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* 4. Hình ảnh trong lớp lưới có chiều rộng 100% (không ảnh hưởng flex) */
+.grid img {
+    width: 100%;
+}
+
+/* 5. Tạo kiểu cho lớp flex */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
