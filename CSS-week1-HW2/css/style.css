@@ -65,13 +65,13 @@ nav img {
     row-gap: 20px;
 }
 
-/* 4. Hình ảnh trong lớp lưới có chiều rộng 100% (không ảnh hưởng flex) */
+/* 4. Hình ảnh trong lớp lưới có chiều rộng 100% */
 .grid img {
     width: 100%;
 }
 
-/* 5. Tạo kiểu cho lớp flex */
-.flex-container {
+/* 5. Tạo kiểu cho lớp flex (đã đổi tên khớp với trang parks) */
+.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
