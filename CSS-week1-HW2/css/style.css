@@ -1,34 +1,78 @@
-/* --- PHẦN CSS CƠ BẢN CỦA BẠN --- */
+/* --- PHẦN CSS CƠ BẢN --- */
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f9;
+  color: #1e293b;
 }
 
 /* Tiêu đề */
 header {
   background-color: #e0e7ff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #c7d2fe;
 }
 
 /* Thanh điều hướng cơ bản */
 nav {
   background-color: #dbeafe;
+  display: inline-block;
+  width: 80%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  vertical-align: middle;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Hình ảnh logo trong nav */
+nav img {
+  width: 10%;
+  max-width: 70px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+/* Danh sách menu */
+nav ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+li {
+  display: inline-block;
+  width: auto; /* Sửa lỗi chữ bị ép dòng */
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #bfdbfe;
 }
 
 /* Nội dung chính */
 main {
   background-color: #f8fafc;
   font-size: 18px;
-}
-
-/* Chân trang */
-footer {
-  background-color: #e5e7eb;
-}
-
-/* Danh sách */
-li {
-  display: inline-block;
-  width: 150px;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Tiêu đề h1 */
@@ -36,43 +80,59 @@ h1 {
   text-align: center;
   font-family: Georgia, serif;
   color: #1d4ed8;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 /* Đoạn văn */
 p {
   line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Chân trang */
+footer {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 15px;
+  color: #4b5563;
 }
 
 /* --- PHẦN BỔ SUNG CHO BÀI TẬP TUẦN 2 (HW2) --- */
 
-/* 1. Thay đổi phần tử nav: khối nội tuyến và chiều rộng khoảng 80% */
-nav {
-    display: inline-block;
-    width: 80%;
-}
-
-/* 2. Sử dụng bộ chọn hậu duệ để tạo kiểu cho hình ảnh trong nav có chiều rộng khoảng 10% */
-nav img {
-    width: 10%;
-}
-
-/* 3. Tạo kiểu cho lớp lưới (Grid): lưới 2 cột, mỗi cột xấp xỉ 40% kèm căn chỉnh */
+/* Lớp lưới (Grid) cho trang Neighborhood */
 .grid {
-    display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: center;
-    align-items: center;
-    row-gap: 20px;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+  column-gap: 25px; /* Thêm khoảng cách giữa 2 cột cho thoáng */
+  margin-top: 20px;
 }
 
-/* 4. Hình ảnh trong lớp lưới có chiều rộng 100% */
 .grid img {
-    width: 100%;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
-/* 5. Tạo kiểu cho lớp flex (đã đổi tên khớp với trang parks) */
+/* Lớp Flex cho trang Parks */
 .flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Tạo khoảng cách đều giữa các ảnh */
+  margin-top: 20px;
+}
+
+/* Giới hạn kích thước ảnh trong Flex để không bị vỡ khung */
+.flex img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover; /* Cắt ảnh vừa khung vuông vắn, không bị méo */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
